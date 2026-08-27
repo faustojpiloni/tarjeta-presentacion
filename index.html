@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Tarjeta de Presentación - Fausto Piloni</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
 
   @page {
     size: 90mm 50mm;
@@ -41,22 +41,24 @@
   }
 
   .name {
-    font-size: 13pt;
+    font-size: 15pt;
     font-weight: 800;
     letter-spacing: 1.5px;
     color: #000000;
     text-transform: uppercase;
     line-height: 1.1;
+    display: inline-block;
   }
 
   .subtitle {
-    font-size: 6.5pt;
+    font-size: 7.2pt;
     font-weight: 600;
-    letter-spacing: 4.6px;
+    letter-spacing: 4.5px; /* Tracking ajustado para igualar el ancho exacto de FAUSTO PILONI */
     color: #222222;
     text-transform: uppercase;
-    margin-top: 1.2mm;
-    margin-right: -4.6px;
+    margin-top: 1.5mm;
+    margin-right: -4.5px; /* Cancela el espacio extra de la última letra para alineación perfecta */
+    display: block;
   }
 
   /* Línea divisoria horizontal */
@@ -85,7 +87,7 @@
   .contact-row {
     display: flex;
     align-items: center;
-    gap: 2mm;
+    gap: 2.5mm;
   }
 
   .contact-text {
@@ -95,11 +97,18 @@
     white-space: nowrap;
   }
 
+  /* Estilos para íconos */
   .icon {
-    width: 3.2mm;
-    height: 3.2mm;
+    width: 3.4mm;
+    height: 3.4mm;
     fill: #222222;
     flex-shrink: 0;
+  }
+
+  /* Íconos de Mundo y Mail ligeramente más grandes para equiparar al de WhatsApp */
+  .icon-lg {
+    width: 4.0mm;
+    height: 4.0mm;
   }
 
   /* Columna Derecha: Código QR */
@@ -132,7 +141,7 @@
     <div class="content-bottom">
       <div class="contact-wrapper">
         <div class="contact-row">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
           <span class="contact-text">faustojpiloni.github.io</span>
         </div>
 
@@ -142,7 +151,7 @@
         </div>
 
         <div class="contact-row">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           <span class="contact-text">faustopiloni@gmail.com</span>
         </div>
       </div>
@@ -153,5 +162,7 @@
     </div>
   </div>
 
+</body>
+</html>
 </body>
 </html>
